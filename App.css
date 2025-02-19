@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Forecast Container */
+.forecast-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Grid Layout for Forecast */
+.forecast-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Forecast Box */
+.forecast-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.forecast-box:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Icon Styling */
+.forecast-box img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .forecast-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-box {
+    width: 80%;
+  }
+}
